@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+    <div class="container p-1">
     <nav class="navbar navbar-expand-sm justify-content-center bg-light">
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -25,14 +26,28 @@
             <li class="nav-items">
                 <a class="nav-link" href="#">Kids</a>
             </li>
-            <button class=""></button>
         </ul>
-        <form class="d-flex">
+        
+  <form class="d-flex">
         <input class="form-control me-2" type="text" placeholder="Search">
         <button class="btn btn-primary" type="button">Search</button>
       </form>
+      <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    Cart
+  </button>
     </div>
     </nav>
+    <div class="offcanvas offcanvas-end" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Cart</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Your cart is empty</p>
+  </div>
+      
+</div>
+
         <div class="row">
     <div class="col-6"><img class="img-fluid" src="ExampleImg.png"></div>
     <div class="col-6">
@@ -40,9 +55,14 @@
     <p>description</p>
     <h3>price</h3>
     <p>size options</p>
-    <input type="submit" name="" value="3">
-    <input type="submit" name="" value="4">
+    <button type="button" class="btn btn-outline-dark btn-sm">S</button>
+    <button type="button" class="btn btn-outline-dark btn-sm">M</button>
+    <button type="button" class="btn btn-outline-dark btn-sm">L</button>
     <br>
-    <input type="submit" name="" value="Add to cart"></div>
+    <div class="d-grid">
+  <button type="button" class="btn btn-dark btn-block">Add to cart</button>
+</div>
+</div>
+</div>
 </div>
 </body>

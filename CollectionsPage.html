@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frost & Form - Women's Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color:rgb(255,255,255);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: reg(255,255,255);
+            border-bottom: 1px solid ;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: 255,255,255;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            color: black;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+	       
+     	.product-image {
+   	 height: 150px;
+    	width: 100%; 
+    	background-color: rgb(255,255,255);
+    	display: flex;
+   	 align-items: center;
+   	 justify-content: center;
+   	 overflow: hidden; 
+	}
+ 
+	.product-image img {
+    	height: 100%;
+   	 width: 100%;  
+   	 object-fit: cover; 
+	}
+	     
+           
+            color: #999;
+            font-size: 1.1rem;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-name {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+
+        }
+        
+        .product-price {
+            font-size: 1.0 rem;
+            font-weight: bold;
+            color: rgb(0,0,0);
+            margin-bottom: 15px;
+        }
+        
+        .collection-info {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 50px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        
+        .collection-info h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .collection-info p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 30px;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Frost & Form Women's Collection</h1>
+            <p class="tagline">Trusted high quality woman’s collection for fashionable women for any occasions..</p>
+        </header>
+
+
+              <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                  <img src="ExampleImg.png">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters </h3>
+                    <div class="product-price">15,00 €</div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image2.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name"> women's sweaters </h3>
+                    <div class="product-price">17,00 €</div>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                   <img src="image3.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters</h3>
+                    <div class="product-price">19,00 €</div>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                   <img src="image4.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters</h3>
+                    <div class="product-price">21,00 €</div>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">
+                   <img src="image5.jpg">
+
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters</h3>
+                    <div class="product-price">23,00 €</div>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image6.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters</h3>
+                    <div class="product-price">25,00 €</div>
+                </div>
+
+            </div>
+            
+            <!-- Product 7 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image7.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters</h3>
+                    <div class="product-price">27,00 €</div>
+                </div>
+ </div>
+            
+            <!-- Product 8 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image8.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters</h3>
+                    <div class="product-price">29,00 €</div>
+                </div>
+ </div>
+            
+            <!-- Product 9 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image9.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters</h3>
+                    <div class="product-price">30,00 €</div>
+                </div>
+ </div>
+            
+            <!-- Product 10 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="image10.jpg">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">women's sweaters</h3>
+                    <div class="product-price">32,00 €</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="collection-info">
+            <h2>Women's Collection for All winter Activities</h2>
+            <p>Embrace the chilly season with cozy, chic winter outfits by layering up in stylish coats, warm sweaters, and trendy boots. From fluffy scarves to classic wool coats, these 		winter wardrobe staples keep the look fashionable yet warm. Capture the aesthetic with captions like "Sweater weather is better together," "Cold days, warm aesthetic," or 		"Chic happens, even in the snow". </p>
+          
+        </div>
+        
+        <footer>
+            <p>Where Snowflakes Meet Blueprints.</p>
+            <p style="margin-top: 15px;">&copy; Frost & Form - Finnish winter wear brand since 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

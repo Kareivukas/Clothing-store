@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frost & Form - Women's Collection</title>
@@ -80,7 +82,7 @@
    	 object-fit: cover; 
 	}
 	     
-           
+        {
             color: #999;
             font-size: 1.1rem;
         }
@@ -143,7 +145,60 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg px-4 justify-content-center bg-light fixed-top">
+
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <ul class="navbar-nav ms-auto">
+        <a class="navbar-brand" href="#">Frost&Form</a>
+    </ul>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Men</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Jackets</a></li>
+            <li><a class="dropdown-item" href="#">Sweaters</a></li>
+            <li><a class="dropdown-item" href="#">Boots</a></li>
+            </ul>
+            <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Women</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Jackets</a></li>
+            <li><a class="dropdown-item" href="#">Sweaters</a></li>
+            <li><a class="dropdown-item" href="#">Boots</a></li>
+            </ul>
+            <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Kids</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Jackets</a></li>
+            <li><a class="dropdown-item" href="#">Sweaters</a></li>
+            <li><a class="dropdown-item" href="#">Boots</a></li>
+            </ul>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+  <form class="d-flex">
+        <input class="form-control me-1 my-2 mb-2" type="text" placeholder="Search">
+        <button class="btn btn-primary btn-sm me-2 my-2 mb-2" type="button">Search</button>
+      </form>
+      <button class="btn btn-dark my-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    Cart
+  </button>
+    </div>
+    </nav>
+</ul>
+    <div class="offcanvas offcanvas-end" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Cart</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Your cart is empty</p>
+  </div>
+</div>
+</nav>
+    <div class="container" style="margin-top:65px">
         <header>
             <h1>Frost & Form Women's Collection</h1>
             <p class="tagline">Trusted high quality woman’s collection for fashionable women for any occasions..</p>
@@ -154,7 +209,7 @@
             <!-- Product 1 -->
             <div class="product-card">
                 <div class="product-image">
-                  <img src="ExampleImg.png">
+                  <img src="image1.jpg.jpeg">
                 </div>
                 <div class="product-info">
                     <h3 class="product-name">women's sweaters </h3>

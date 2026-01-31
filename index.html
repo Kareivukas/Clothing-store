@@ -56,11 +56,8 @@
             transition: background 0.3s;
         }
         
-        .drogpdown-item a:hover {
+        .dropdown-item a:hover {
             background-color: rgb(248, 249, 250); 
-        }
-        
-     
             display: none;
             position: absolute;
             background-color: rgb(255, 255, 255);
@@ -71,7 +68,7 @@
             overflow: hidden;
         }
         
-        .dropdown-content a {
+        .dropdown-menu a {
             color: rgb(51, 51, 51);
             padding: 12px 16px;
             text-decoration: none;
@@ -80,13 +77,10 @@
             transition: background 0.3s;
         }
         
-        .dropdown-content a:hover {
+        .dropdown-menu a:hover {
             background-color: rgb(248, 249, 250); 
         }
         
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
         
         .category-dropdowns {
             display: flex;
@@ -146,7 +140,7 @@
             margin-bottom: 40px;
         }
         
-        .product-card {
+        .card {
             background: rgb(255, 255, 255);
             border-radius: 8px;
             overflow: hidden;
@@ -157,12 +151,12 @@
             height: 100%;
         }
         
-        .product-card:hover {
+        .card:hover {
             transform: translateY(-5px);
         }
         
-        .product-image {
-            height: 200px;
+        .img-fluid {
+            height: 90%;
             width: 100%; 
             overflow: hidden; 
             display: flex;
@@ -171,14 +165,12 @@
             background-color: rgb(248, 248, 248);
         }
         
-        .product-image img {
-            width: 100%;
-            height: 100%;
+        .img-fluid img {
             object-fit: cover;
             display: block;
         }
         
-        .product-title {
+        .card-footer {
             font-weight: bold;
             margin: 15px 0;
             font-size: 16px;
@@ -202,21 +194,22 @@
             margin-top: 40px;
         }
         
-       
-        }
     </style>
 </head>
 <body>
-   <nav class="navbar navbar-expand-lg px-4 justify-content-center fixed-top">
+        <!-- Top Navigation Bar -->
+   <nav class="navbar navbar-expand-lg justify-content-center fixed-top">
 
-      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button> 
         <ul class="navbar-nav ms-auto">
         <a class="navbar-brand" href="index.html">Frost&Form</a>
     </ul>
+     <!-- Category Dropdowns -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
+            <!-- Men Dropdown -->
             <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Men</a>
           <ul class="dropdown-menu">
@@ -224,6 +217,7 @@
             <li><a class="dropdown-item" href="#">Sweaters</a></li>
             <li><a class="dropdown-item" href="#">Boots</a></li>
             </ul>
+            <!-- Women Dropdown -->
             <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Women</a>
           <ul class="dropdown-menu">
@@ -231,6 +225,7 @@
             <li><a class="dropdown-item" href="CollectionsPage.html">Sweaters</a></li>
             <li><a class="dropdown-item" href="#">Boots</a></li>
             </ul>
+            <!-- Kids Dropdown -->
             <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Kids</a>
           <ul class="dropdown-menu">
@@ -239,23 +234,27 @@
             <li><a class="dropdown-item" href="#">Boots</a></li>
             </ul>
         </ul>
+        <!-- Search bar -->
         <ul class="navbar-nav ms-auto">
   <form class="d-flex">
-        <input class="form-control me-1 my-2 mb-2" type="text" placeholder="Search">
-        <button class="btn btn-primary btn-sm me-2 my-2 mb-2" type="button">Search</button>
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="btn btn-sm" type="button">Search</button>
+       
       </form>
-      <button class="btn btn-dark my-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+      <!-- Cart button -->
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
     Cart
   </button>
     </div>
     </nav>
 </ul>
+    <!-- Inside of the cart -->
     <div class="offcanvas offcanvas-end" id="demo">
   <div class="offcanvas-header">
     <h1 class="offcanvas-title">Cart</h1>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
-  <div class="offcanvas-body">
+  <div class="offcanvas-body"> 
     <p>Your cart is empty</p>
   </div>
 </div>
@@ -271,56 +270,44 @@
     </section>
     
     <!-- Product Range -->
-    <div class="container" style="margin-top:65px">
+    <div class="container">
         <h2 style="text-align: center; margin-bottom: 30px; color: rgb(44, 62, 80);">
         
         <!-- First Row -->
         <div class="product-grid">
-            <div class="product-card">
+            <div class="card">
                 <a href="CollectionsPage.html">
-                <div class="product-image">
-                    <img src="wimage1.jpg.jpeg" alt="Sweater Women's">
-                </div>
-                <div class="product-title">Sweater Women's</div>
+                    <img class="img-fluid" src="wimage1.jpg.jpeg" alt="Sweater Women's">
+                <div class="card-footer">Sweater Women's</div>
             </a>
             </div>
             
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="mimage1.jpg.jpeg" alt="Sweater Men's">
-                </div>
-                <div class="product-title">Sweater Men's</div>
+            <div class="card">
+                    <img class="img-fluid" src="mimage1.jpg.jpeg" alt="Sweater Men's">
+                <div class="card-footer">Sweater Men's</div>
             </div>
             
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="kimage1.jpg.jpeg" alt="Sweater Kid's">
-                </div>
-                <div class="product-title">Sweater Kid's</div>
+            <div class="card">
+                    <img class="img-fluid" src="kimage1.jpg.jpeg" alt="Sweater Kid's">
+                <div class="card-footer">Sweater Kid's</div>
             </div>
         </div>
         
         <!-- Second Row -->
         <div class="product-grid">
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="wimage2.jpg.jpeg" alt="Jacket Women's">
-                </div>
-                <div class="product-title">Jacket Women's</div>
+            <div class="card">
+                    <img class="img-fluid" src="wimage2.jpg.jpeg" alt="Jacket Women's">
+                <div class="card-footer">Jacket Women's</div>
             </div>
             
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="mimage2.jpg.jpeg" alt="Sweater Men's">
-                </div>
-                <div class="product-title">Sweater Men's</div>
+            <div class="card">
+                    <img class="img-fluid" src="mimage2.jpg.jpeg" alt="Sweater Men's">
+                <div class="card-footer">Sweater Men's</div>
             </div>
             
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="kimage2.jpg.jpeg" alt="Sweater Kid's">
-                </div>
-                <div class="product-title">Sweater Kid's</div>
+            <div class="card">
+                    <img class="img-fluid" src="kimage2.jpg.jpeg" alt="Sweater Kid's">
+                <div class="card-footer">Sweater Kid's</div>
             </div>
         </div>
     </div>

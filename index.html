@@ -133,12 +133,6 @@
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
         
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-bottom: 40px;
-        }
         
         .card {
             background: rgb(255, 255, 255);
@@ -238,7 +232,7 @@
         <ul class="navbar-nav ms-auto">
   <form class="d-flex">
         <input class="form-control" type="text" placeholder="Search">
-        <button class="btn btn-sm" type="button">Search</button>
+        <button class="btn" type="button">Search</button>
        
       </form>
       <!-- Cart button -->
@@ -274,41 +268,53 @@
         <h2 style="text-align: center; margin-bottom: 30px; color: rgb(44, 62, 80);">
         
         <!-- First Row -->
-        <div class="product-grid">
+        <div class="row">
+            <div class="col-sm-4">
             <div class="card">
                 <a href="CollectionsPage.html">
                     <img class="img-fluid" src="wimage1.jpg.jpeg" alt="Sweater Women's">
                 <div class="card-footer">Sweater Women's</div>
             </a>
             </div>
+            </div>
             
+            <div class="col-sm-4">
             <div class="card">
                     <img class="img-fluid" src="mimage1.jpg.jpeg" alt="Sweater Men's">
                 <div class="card-footer">Sweater Men's</div>
             </div>
-            
+            </div>
+
+            <div class="col-sm-4">
             <div class="card">
                     <img class="img-fluid" src="kimage1.jpg.jpeg" alt="Sweater Kid's">
                 <div class="card-footer">Sweater Kid's</div>
             </div>
         </div>
-        
+        </div>
+
         <!-- Second Row -->
-        <div class="product-grid">
+         <div class="row">
+            <div class="col-sm-4">
             <div class="card">
                     <img class="img-fluid" src="wimage2.jpg.jpeg" alt="Jacket Women's">
                 <div class="card-footer">Jacket Women's</div>
             </div>
-            
+            </div>
+
+            <div class="col-sm-4">
             <div class="card">
                     <img class="img-fluid" src="mimage2.jpg.jpeg" alt="Sweater Men's">
                 <div class="card-footer">Sweater Men's</div>
             </div>
-            
+            </div>
+
+            <div class="col-sm-4">
             <div class="card">
                     <img class="img-fluid" src="kimage2.jpg.jpeg" alt="Sweater Kid's">
                 <div class="card-footer">Sweater Kid's</div>
             </div>
+        </div>
         </div>
     </div>
     

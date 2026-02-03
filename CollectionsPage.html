@@ -58,10 +58,21 @@
             transition: background 0.3s;
         }
         
-        .drogpdown-item a:hover {
+        .dropdown-item a:hover {
             background-color: rgb(248, 249, 250); 
         }
+        .dropdown-menu a {
+            color: rgb(51, 51, 51);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-bottom: 1px solid rgb(241, 241, 241);
+            transition: background 0.3s;
+        }
         
+        .dropdown-menu a:hover {
+            background-color: rgb(248, 249, 250); 
+        }
         
         body {
             background-color:rgb(255,255,255);
@@ -102,7 +113,7 @@
             margin-top: 40px;
         }
         
-        .product-card {
+        .card {
             background: white;
             border-radius: 8px;
             overflow: hidden;
@@ -110,7 +121,7 @@
             transition: transform 0.3s ease;
         }
         
-        .product-card:hover {
+        .card:hover {
             transform: translateY(-5px);
         }
 
@@ -192,16 +203,19 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg px-4 justify-content-center fixed-top">
+    <!-- Top Navigation Bar -->
+   <nav class="navbar navbar-expand-lg justify-content-center fixed-top">
 
-      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button> 
         <ul class="navbar-nav ms-auto">
         <a class="navbar-brand" href="index.html">Frost&Form</a>
     </ul>
+     <!-- Category Dropdowns -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
+            <!-- Men Dropdown -->
             <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Men</a>
           <ul class="dropdown-menu">
@@ -209,6 +223,7 @@
             <li><a class="dropdown-item" href="#">Sweaters</a></li>
             <li><a class="dropdown-item" href="#">Boots</a></li>
             </ul>
+            <!-- Women Dropdown -->
             <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Women</a>
           <ul class="dropdown-menu">
@@ -216,6 +231,7 @@
             <li><a class="dropdown-item" href="CollectionsPage.html">Sweaters</a></li>
             <li><a class="dropdown-item" href="#">Boots</a></li>
             </ul>
+            <!-- Kids Dropdown -->
             <li class="nav-item dropdown">
           <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">Kids</a>
           <ul class="dropdown-menu">
@@ -224,23 +240,27 @@
             <li><a class="dropdown-item" href="#">Boots</a></li>
             </ul>
         </ul>
+        <!-- Search bar -->
         <ul class="navbar-nav ms-auto">
   <form class="d-flex">
-        <input class="form-control me-1 my-2 mb-2" type="text" placeholder="Search">
-        <button class="btn btn-primary btn-sm me-2 my-2 mb-2" type="button">Search</button>
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="btn" type="button">Search</button>
+       
       </form>
-      <button class="btn btn-dark my-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+      <!-- Cart button -->
+      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
     Cart
   </button>
     </div>
     </nav>
 </ul>
+    <!-- Inside of the cart -->
     <div class="offcanvas offcanvas-end" id="demo">
   <div class="offcanvas-header">
     <h1 class="offcanvas-title">Cart</h1>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
-  <div class="offcanvas-body">
+  <div class="offcanvas-body"> 
     <p>Your cart is empty</p>
   </div>
 </div>
@@ -255,11 +275,9 @@
               <div class="products-grid">
             <!-- Product 1 -->
              
-            <div class="product-card">
+            <div class="card">
                 <a href="ProductPage.html">
-                <div class="product-image">
-                  <img src="image1.jpg.jpeg">
-                </div>
+                  <img class="img-fluid" src="image1.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Winter Whisper Knit</h3>
                     <div class="product-price">15,00 €</div>
@@ -267,11 +285,9 @@
             </div>
             
             <!-- Product 2 -->
-            <div class="product-card">
+            <div class="card">
                  <a href="ProductPage1.html">
-                <div class="product-image">
-                    <img src="image2.jpg.jpeg">
-                </div>
+                    <img class="img-fluid" src="image2.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Soft Ember Pullover</h3>
                     <div class="product-price">17,00 €</div>
@@ -279,11 +295,9 @@
             </div>
             
             <!-- Product 3 -->
-            <div class="product-card">
+            <div class="card">
                  <a href="ProductPage2.html">
-                <div class="product-image">
-                   <img src="image3.jpg.jpeg">
-                </div>
+                   <img class="img-fluid" src="image3.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Moonlit Meadow Sweater</h3>
                     <div class="product-price">19,00 €</div>
@@ -291,10 +305,8 @@
             </div>
             
             <!-- Product 4 -->
-            <div class="product-card">
-                <div class="product-image">
-                   <img src="image4.jpg.jpeg">
-                </div>
+            <div class="card">
+                   <img class="img-fluid" src="image4.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Velvet Frost Turtleneck</h3>
                     <div class="product-price">21,00 €</div>
@@ -302,11 +314,8 @@
             </div>
             
             <!-- Product 5 -->
-            <div class="product-card">
-                <div class="product-image">
-                   <img src="image5.jpg.jpeg">
-
-                </div>
+            <div class="card">
+                   <img class="img-fluid" src="image5.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Cozy Aura Cable Knit</h3>
                     <div class="product-price">23,00 €</div>
@@ -314,10 +323,8 @@
             </div>
             
             <!-- Product 6 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="image6.jpg.jpeg">
-                </div>
+            <div class="card">
+                    <img class="img-fluid" src="image6.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Golden Hour Wrap</h3>
                     <div class="product-price">25,00 €</div>
@@ -326,10 +333,8 @@
             </div>
             
             <!-- Product 7 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="image7.jpg.jpeg">
-                </div>
+            <div class="card">
+                    <img class="img-fluid" src="image7.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Starlace Ribbed Sweater</h3>
                     <div class="product-price">27,00 €</div>
@@ -337,10 +342,8 @@
  </div>
             
             <!-- Product 8 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="image8.jpg.jpeg">
-                </div>
+            <div class="card">
+                    <img class="img-fluid" src="image8.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Blossom Breeze Knit</h3>
                     <div class="product-price">29,00 €</div>
@@ -348,10 +351,8 @@
  </div>
             
             <!-- Product 9 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="image9.jpg.jpeg">
-                </div>
+            <div class="card">
+                    <img class="img-fluid" src="image9.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Nordic Dream Pullover</h3>
                     <div class="product-price">30,00 €</div>
@@ -359,10 +360,8 @@
  </div>
             
             <!-- Product 10 -->
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="image10.jpg.jpeg">
-                </div>
+            <div class="card">
+                    <img class="img-fluid" src="image10.jpg.jpeg">
                 <div class="product-info">
                     <h3 class="product-name">Silkcloud Lounge Sweater</h3>
                     <div class="product-price">32,00 €</div>

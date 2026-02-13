@@ -81,9 +81,17 @@ List any tables that you have created in the project work
 
 ## Changes made
 
-- Footer and header files separated and linked to pages.
-- Added variables to collections and product pages to make them easier to duplicate.
-- Production expanded (added more pictures and created names and prices).
+- Footer and header files separated and linked to pages. (Aurelija)
+- Added variables to collections and product pages to make them easier to duplicate.(Aurelija)
+- Production expanded (added more pictures and created names and prices)(Thushara).
+- Added icon for loging in on the navigation bar (Aurelija)
+
+## Extra ideas
+
+- Loyalty programme(Thushara)
+- Discount programme(Thushara)
+- Digital gift cards(Thushara)
+- Extra pages (About us, contact us, etc.)
   
 
 > Feel free to customise this README template to suit your project's specific needs. Providing clear and organised documentation will help your team members understand the project's progress and tasks effectively. This document will have a significant impact on the grading. 

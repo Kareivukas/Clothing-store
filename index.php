@@ -1,8 +1,16 @@
 
 <?php
-include  'Header.php';
 $title = "Frost & Form® | Where Snowflakes Meet Blueprints";
-$md = "This website is for winter enthusiasts!"
+$md = "This website is for winter enthusiasts!";
+include  'Header.php';
+
+$Wsweater = "wimage1.jpg.jpeg";
+$Msweater = "Caden-Crewneck-Sweater.jpeg";
+$Ksweater = "Sweaterkids.jpeg";
+$Wjacket = "Nonie-Puffer-Jacket-250.jpeg";
+$Mjacket = "mimage2.jpg.jpeg";
+$Kjacket = "kidsJacket.jpg";
+
 ?>
 <style>
         .hero-section {
@@ -109,7 +117,7 @@ $md = "This website is for winter enthusiasts!"
             <div class="col-sm-4">
             <div class="card">
                 <a href="CollectionsPage.php">
-                    <img class="img-fluid" src="wimage1.jpg.jpeg" alt="Sweater Women's">
+                    <img class="img-fluid" src=<? echo $Wsweater ?> alt="Sweater Women's">
                 <div class="card-footer">Sweater Women's</div>
             </a>
             </div>
@@ -117,14 +125,14 @@ $md = "This website is for winter enthusiasts!"
             
             <div class="col-sm-4">
             <div class="card">
-                    <img class="img-fluid" src="Caden-Crewneck-Sweater.jpeg" alt="Sweater Men's">
+                    <img class="img-fluid" src=<? echo $Msweater ?> alt="Sweater Men's">
                 <div class="card-footer">Sweater Men's</div>
             </div>
             </div>
 
             <div class="col-sm-4">
             <div class="card">
-                    <img class="img-fluid" src="Sweaterkids.jpeg" alt="Sweater Kid's">
+                    <img class="img-fluid" src=<? echo $Ksweater ?> alt="Sweater Kid's">
                 <div class="card-footer">Sweater Kid's</div>
             </div>
         </div>
@@ -134,21 +142,21 @@ $md = "This website is for winter enthusiasts!"
          <div class="row">
             <div class="col-sm-4">
             <div class="card">
-                    <img class="img-fluid" src="Nonie-Puffer-Jacket-250.jpeg" alt="Jacket Women's">
+                    <img class="img-fluid" src=<? echo $Wjacket ?> alt="Jacket Women's">
                 <div class="card-footer">Jacket Women's</div>
             </div>
             </div>
 
             <div class="col-sm-4">
             <div class="card">
-                    <img class="img-fluid" src="mimage2.jpg.jpeg" alt="Sweater Men's">
+                    <img class="img-fluid" src=<? echo $Mjacket ?> alt="Sweater Men's">
                 <div class="card-footer">Jacket Men's</div>
             </div>
             </div>
 
             <div class="col-sm-4">
             <div class="card">
-                    <img class="img-fluid" src="kidsJacket.jpg" alt="Sweater Kid's">
+                    <img class="img-fluid" src=<? echo $Kjacket ?> alt="Sweater Kid's">
                 <div class="card-footer">Jacket Kid's</div>
             </div>
         </div>

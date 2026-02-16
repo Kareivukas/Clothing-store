@@ -1,7 +1,8 @@
 <?php
-include  'Header.php';
 $title = "Product";
 $md = "This website is for winter enthusiasts!";
+include  'Header.php';
+
 $description = "A soft, lightweight knit designed for everyday comfort, perfect for layering through every season.";
 $name = "Winter Whisper Knit";
 $price = "15,00";

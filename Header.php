@@ -5,7 +5,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title ?></title>
+    <meta <?php 
+    if(isset($md) && !empty($md))
+        {
+            echo $md;
+        }
+    else 
+        {
+            echo "Default meta description";
+        }
+        ?>>
+    <title><?php if(isset($title) && !empty($title))
+        {
+            echo $title;
+        }
+            else 
+            {
+                echo "Webpage";
+            }
+        ?></title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
         body { line-height: 1.6; color: rgb(51, 51, 51); }
@@ -113,6 +131,7 @@
         <ul class="navbar-nav ms-auto">
         <a class="navbar-brand" href="index.php">Frost&Form</a>
     </ul>
+    
      <!-- Category Dropdowns -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
@@ -146,8 +165,10 @@
   <form class="d-flex">
         <input class="form-control" type="text" placeholder="Search">
         <button class="btn" type="button">Search</button>
-       
       </form>
+      <button class="btn" type="button">
+    Log in
+  </button>
       <!-- Cart button -->
       <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
     Cart
@@ -165,4 +186,5 @@
     <p>Your cart is empty</p>
   </div>
 </div>
+
 </nav>

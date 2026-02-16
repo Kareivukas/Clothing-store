@@ -1,7 +1,7 @@
 <?php
-include  'Header.php';
 $title = "Frost & Form - Women's Collection";
 $md = "Women's sweaters are the best!";
+include  'Header.php';
 
 $image1 = "image1.jpg.jpeg";
 $image2 = "image2.jpg.jpeg";

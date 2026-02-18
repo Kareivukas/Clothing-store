@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clothing store</title>
+
+</head>
+<body>
+
+  <form method="POST">
+      <label>email:</label>
+        <input type="email" name="email" class="form-control">
+      <label>password:</label>
+        <input type="password" name="password" class="form-control">
+
+    <button type="submit" name="submit" class="btn btn-success">Submit</button>
+    
+  </form>
+
+  <br>
+
+  <?php
+  if (isset($_POST['email']) && isset($_POST['password'])) {
+      echo "<h3>Hello " . $_POST['email'] . ",
+      Welcome to clothing store</h3>";
+  }
+  ?>
+</div>
+
+</body>
+</html>

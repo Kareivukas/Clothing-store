@@ -3,16 +3,16 @@ include  'Header.php';
 $title = "Frost & Form - Women's Collection";
 $md = "Women's jackets are the best!";
 
-$image1 = "TheAlpineChicShell.AVIF File (.avif)";
-$image2 = "TheArcticLuxeParka.AVIF File (.avif)";
-$image3 = "TheFrostflowerBomber.AVIF File (.avif)";
-$image4 = "TheFrostlineFitted Coat.AVIF File (.avif)";
-$image5 = "TheFrozenRoseDuffel.AVIF File (.avif)";
-$image6 = "TheIcePrincessPuffer.AVIF File (.avif)";
-$image7 = "TheIcefallFauxFur.AVIF File (.avif)";
-$image8 = "ThePolarEleganceCoat.AVIF File (.avif)";
-$image9 = "ThePowderPeakDown.AVIF File (.avif)";
-$image10 = "TheSnowQueenParka.AVIF File (.avif)";
+$image1 = "TheAlpineChicShell.avif";
+$image2 = "TheArcticLuxeParka.avif";
+$image3 = "TheFrostflowerBomber.avif";
+$image4 = "TheFrostlineFitted Coat.avif";
+$image5 = "TheFrozenRoseDuffel.avif";
+$image6 = "TheIcePrincessPuffer.avif";
+$image7 = "TheIcefallFauxFur.avif";
+$image8 = "ThePolarEleganceCoat.avif";
+$image9 = "ThePowderPeakDown.avif";
+$image10 = "TheSnowQueenParka.avif";
 
 $name1 = "The Alpine Chic Shell";
 $name2 = "The Arctic Luxe Parka";

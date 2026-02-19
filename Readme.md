@@ -9,7 +9,11 @@
 
 - Below, you will find an example to help you get started. Feel free to customise it to match your specific requirements and needs.
 
-# Project Name - Team Number
+# Project Name - Clothing-store
+**Team Number**
+  Putnaite Aurelija  
+  Wanninayaka Thushara
+  Sushant
 
 A brief description of your web development project.
 
@@ -49,10 +53,10 @@ There will be a button (probably on the bottom), which when clicked by a user ta
 
 List the database tables that are part of your project. 
 
-- Log in information (Sushant): Table Name 
-- Payment information (Thushara): Table Name 
+- Log in information (Sushant): logininfo
+- Payment information (Thushara):paymentInfo
 - Feedback (Aurelija): Table Name
-- Products, used for search (Aurelija): Table Name
+- Products, used for search (Aurelija):Search
 
 > Include the ER Diagram of the database.(Aurelija)
 
@@ -90,7 +94,6 @@ List any tables that you have created in the project work
 
 - Loyalty programme(Thushara)
 - Discount programme(Thushara)
-- Digital gift cards(Thushara)
 - Extra pages (About us, contact us, etc.)
   
 

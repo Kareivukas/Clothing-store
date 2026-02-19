@@ -4,9 +4,8 @@ if (isset($_POST['submit'])) {
     // Retrieve data from the form and store it in variables
     $full_name = $_POST['full_name'];     // Fullname
     $email = $_POST['email'];     // email
+    $password = $_POST['password']; //password
     
-    // hash the password
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
     // Include the database connection file
     include 'db1.php';
 
@@ -26,4 +25,5 @@ if (isset($_POST['submit'])) {
     // Close the database connection
     $conn->close();
 }
+
 ?>

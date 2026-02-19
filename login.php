@@ -23,7 +23,7 @@
 
   <?php
   if (isset($_POST['full_name']) && (isset($_POST['email']) && isset($_POST['password'])) {
-      echo "<h3>Hello " . $_POST['email'] . ",
+      echo "<h3>Hello " . $_POST['full_name'] . ",
       Welcome to Frost & Form</h3>";
   }
   ?>
@@ -31,6 +31,7 @@
 
 </body>
 </html>
+
 
 
 

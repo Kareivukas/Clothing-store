@@ -22,7 +22,7 @@
   <br>
 
   <?php
-  if (isset($_POST['email']) && isset($_POST['password'])) {
+  if (isset($_POST['full_name']) && (isset($_POST['email']) && isset($_POST['password'])) {
       echo "<h3>Hello " . $_POST['email'] . ",
       Welcome to clothing store</h3>";
   }
@@ -31,4 +31,5 @@
 
 </body>
 </html>
+
 

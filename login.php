@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
     <meta charset="UTF-8">
-    <title>Clothing store</title>
+    <title>Frost & Form</title>
 
 </head>
 <body>
@@ -24,12 +24,13 @@
   <?php
   if (isset($_POST['full_name']) && (isset($_POST['email']) && isset($_POST['password'])) {
       echo "<h3>Hello " . $_POST['email'] . ",
-      Welcome to clothing store</h3>";
+      Welcome to Frost & Form</h3>";
   }
   ?>
 </div>
 
 </body>
 </html>
+
 
 

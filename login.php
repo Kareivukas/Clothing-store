@@ -8,6 +8,8 @@
 <body>
 
   <form method="POST">
+      <label>Full Name:</label>
+        <input type="text" name="full_name" class="form-control">
       <label>email:</label>
         <input type="email" name="email" class="form-control">
       <label>password:</label>
@@ -29,3 +31,4 @@
 
 </body>
 </html>
+
